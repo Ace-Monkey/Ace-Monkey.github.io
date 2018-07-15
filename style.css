@@ -1,0 +1,120 @@
+body {
+	font-family: calbri, Helvetica, sans-serif;
+	font-size:15px;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+span, .current a{
+	color:#ce9b4e;
+	font-weight:bold;
+}
+
+header{
+	background:#60574a;
+	color:#ffffff;
+	padding-top:30px;
+	min-width:100%;
+	min-height:70px;
+	border-bottom:#ce9b4e 6px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top: 10px;
+}
+
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+}
+
+/*Show case-------- */
+#showcase{
+	min-height:800px;
+	background:url('coding.png') no-repeat;
+	background-size:cover; 
+	background-position: center;
+	text-align:center;
+	color:#ffffff;
+}
+
+#showcase h1{
+	margin-top:350px;
+	font-size:60px;
+	margin-bottom:10px;
+}
+
+#showcase h2{
+	font-size:30px
+}
+#showcase p{
+	font-size:20px
+}
+
+/*About section*/
+#about{
+	padding-top:30px;
+	padding-bottom:30px;
+	background:#ad936e;
+	color:#ffffff;
+	margin:0;
+}
+
+#about table{
+	width:33%;
+	float:left;
+}
+
+#info{
+width:100%;
+height:auto;
+}
+
+.rimg {
+	float:right;
+	border-radius: 16px;
+	max-width: 100%;
+}
+
+/*Footer section*/
+footer{
+	padding:20px;
+	margin-top:20px;
+	color:#ffffff;
+	background-color:#60574a;
+	text-align:center;
+}
+
+
+
