@@ -8,6 +8,10 @@ body {
 	margin:auto;
 	overflow:hidden;
 }
+.container2{
+	margin:auto;
+	overflow:hidden;
+}
 
 span, .current a{
 	color:#ce9b4e;
@@ -84,11 +88,40 @@ header a:hover{
 
 /*About section*/
 #about{
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:20px;
+	padding-bottom:50px;
 	background:#ad936e;
 	color:#ffffff;
 	margin:0;
+}
+
+#about h1, #about h2, #info h1{
+	text-align:center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#about p{
+	background-color:#60574a;
+	padding:10px 20px 10px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	margin-bottom:45px;
+	float:left;
+	width:70%;
+}
+
+#about img{
+	display: block;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+	height:300px;
+	float:right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#about .enhance{
+	font-size:22px;
 }
 
 #about table{
@@ -97,24 +130,54 @@ header a:hover{
 }
 
 #info{
-width:100%;
-height:auto;
+	width:100%;
+	background:url('coding2.png');
+	color:#ffffff
 }
 
-.rimg {
-	float:right;
-	border-radius: 16px;
-	max-width: 100%;
+
+.info1{
+	display: block;
+	float: left;
+	max-width:20%;
+	min-height:200px;
+	background-color: #eee;
+	padding:10px 10px 10px 10px;
+	color:black;
+	margin:30px 10px 30px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.info1:hover{
+	background-color: #ee9;
+	transform: rotate(3deg);
 }
 
 /*Footer section*/
 footer{
 	padding:20px;
-	margin-top:20px;
 	color:#ffffff;
 	background-color:#60574a;
 	text-align:center;
+	border-top:#ce9b4e 6px solid;
 }
 
+/*for phones of tablets*/
+@media(max-width: 768px){
+	header #branding, header nav, header nav li, about h1, #about table, #info, .info1{
+		float:none;
+		text-align:center;
+		width:100%;
+		 margin: 30px auto;
+	}
+	#about img{
+		width:50%;
+		float:none;
+		margin: auto;
+	}
+	#about table{
+		margin-bottom:25px;
+	}
+}
 
 
