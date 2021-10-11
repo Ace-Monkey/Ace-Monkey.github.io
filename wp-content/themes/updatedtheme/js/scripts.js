@@ -1,3 +1,0 @@
-jQuery(document).ready(function() {
-    // put code here... or maybe a function...
-});
