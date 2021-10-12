@@ -1,3 +1,5 @@
+import profileimg from './images/profile-placeholder.png'
+import caveimg from './images/cave-background.jpg'
 
 function App() {
   return (
@@ -5,9 +7,10 @@ function App() {
 
       {/* Aside bar content --------------------------------------------------- */}
       <aside>
+        <button className="aside-button">i</button>
         <div className="aside-header">
           <div className="avatar-icon">
-            <img src="/" alt="avatar" />
+            <img src={profileimg} alt="avatar" />
           </div>
           <div className="aside-text">
             <h5>Luke Dixon</h5>
@@ -17,6 +20,21 @@ function App() {
           </div>
         </div>
         <div className="aside-content">
+          <div className="aside-info">
+            <div class="info-row">
+              <p>Residence:</p>
+              <p>England</p>
+            </div>
+            <div class="info-row">
+              <p>City:</p>
+              <p>London</p>
+            </div>
+            <div class="info-row">
+              <p>Language:</p>
+              <p>English</p>
+            </div>
+          </div>
+          <hr/>
           <div className="skills-tags">
             <ul>
               <li>html</li>
@@ -32,19 +50,21 @@ function App() {
           <hr/>
           <div className="skills-check">
             <ul>
-              <li>GIT knowledge</li>
-              <li>Unit Testing</li>
+              <li><span className="fa-li"><i className="fas fa-check"></i></span>
+                GIT knowledge</li>
+              <li><span className="fa-li"><i className="fas fa-check"></i></span>
+                Unit Testing</li>
             </ul>
           </div>
           <hr />
           <div className="cv-download">
-            <a href="/">Download CV</a>
+            <a href="/">Download CV <i class="fas fa-file-download"></i></a>
           </div>
         </div>
         <div className="aside-social">
-          <a href="#." target="_blank">in</a>
-          <a href="#." target="_blank">gh</a>
-          <a href="#." target="_blank">gl</a>
+          <a href="#." target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#." target="_blank"><i class="fab fa-github-alt"></i></a>
+          <a href="#." target="_blank"><i class="fab fa-gitlab"></i></a>
         </div>
       </aside>
 
@@ -53,7 +73,7 @@ function App() {
         <div className="main-scrollbox">
 
           {/* Hero content area --------------------------------------------------- */}
-          <div className="hero-banner">
+          <div className="hero-banner" style={{ backgroundImage: 'url(' + caveimg + ')' }} >
             <div className="hero-content">
               <h1>Welcome to my E-portfolio!</h1>
               <p>I build websites.</p>
@@ -118,7 +138,7 @@ function App() {
             </div>
           </div>
 
-          {/* Recommendations area --------------------------------------------------- */}
+          {/* Recommendations area --------------------------------------------------- }
           <div className="recommendations-slider">
             <h4>Recommendations</h4>
             <div className="recommendations-slider-inner">
@@ -148,6 +168,7 @@ function App() {
               </div>
             </div>
           </div>
+          {*/}
 
           {/* Footer area --------------------------------------------------- */}
           <footer>
