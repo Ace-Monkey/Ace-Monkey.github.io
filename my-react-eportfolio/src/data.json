@@ -1,0 +1,126 @@
+{
+  "avatar": "https://www.mona.uwi.edu/modlang/sites/default/files/modlang/male-avatar-placeholder.png",
+  "name": "Luke Dixon",
+  "jobtitle": "Front-end Developer,<br/>Devops Admin",
+  "rowinfo": [
+    {
+      "label": "Residence:",
+      "value": "England"
+    },
+    {
+      "label": "City:",
+      "value": "London"
+    },
+    {
+      "label": "Language:",
+      "value": "English"
+    }
+  ],
+  "skills": [
+    {
+      "skill": "HTML"
+    },
+    {
+      "skill": "CSS/SCSS"
+    },
+    {
+      "skill": "JavaScript"
+    },
+    {
+      "skill": "PHP"
+    },
+    {
+      "skill": "Python"
+    },
+    {
+      "skill": "SQL"
+    },
+    {
+      "skill": "React"
+    },
+    {
+      "skill": "WordPress"
+    }
+  ],
+  "knowledge": [
+    {
+      "skill": "GIT knowledge"
+    },
+    {
+      "skill": "Unit Testing"
+    }
+  ],
+  "downloads": [
+    {
+      "text": "Download cv",
+      "link": "www.cvtemplate.com",
+      "icon": "fa-file-download"
+    }
+  ],
+  "social": [
+    {
+      "icon": "fa-linkedin-in",
+      "link": "#."
+    },
+    {
+      "icon": "fa-github-alt",
+      "link": "#."
+    },
+    {
+      "icon": "fa-gitlab",
+      "link": "#."
+    }
+  ],
+  "heroimage": "https://images.unsplash.com/photo-1572587356426-b33bf42f999b",
+  "herotitle": "Welcome to my E-portfolio!",
+  "herotext": "I build websites",
+  "herobtntext": "Explore Now",
+  "numbersrow": [
+    {
+      "label": "Years Experience",
+      "value": "4+"
+    },
+    {
+      "label": "Websites Developed",
+      "value": "27"
+    },
+    {
+      "label": "Pack Doughnuts",
+      "value": "£1"
+    },
+    {
+      "label": "Hours On BDO",
+      "value": "4000+"
+    }
+  ],
+  "experiencestitle": "My Experiences",
+  "experiences": [
+    {
+      "title": "Web Development",
+      "date": "August 2015 - September 2018",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+    },
+    {
+      "title": "Web Development",
+      "date": "August 2015 - September 2018",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+    },
+    {
+      "title": "Web Development",
+      "date": "August 2015 - September 2018",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+    },
+    {
+      "title": "Web Development",
+      "date": "August 2015 - September 2018",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+    },
+    {
+      "title": "Web Development",
+      "date": "August 2015 - September 2018",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+    }
+  ],
+  "footerleft": "© 2021 My Eportfolio",
+  "footerright": "Created by Luke Dixon"
+}

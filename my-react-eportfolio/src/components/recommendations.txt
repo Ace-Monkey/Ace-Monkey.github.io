@@ -1,0 +1,31 @@
+{/* Recommendations area --------------------------------------------------- }
+          <div className="recommendations-slider">
+            <h4>Recommendations</h4>
+            <div className="recommendations-slider-inner">
+              <div class="Recommendations-item">
+                <h5>Some Guy</h5>
+                <span>Job title</span>
+                <img src="/" alt="Some Guy" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+              </div>
+              <div class="Recommendations-item">
+                <h5>Some Guy</h5>
+                <span>Job title</span>
+                <img src="/" alt="Some Guy" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+              </div>
+              <div class="Recommendations-item">
+                <h5>Some Guy</h5>
+                <span>Job title</span>
+                <img src="/" alt="Some Guy" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+              </div>
+              <div class="Recommendations-item">
+                <h5>Some Guy</h5>
+                <span>Job title</span>
+                <img src="/" alt="Some Guy" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+              </div>
+            </div>
+          </div>
+          {*/}

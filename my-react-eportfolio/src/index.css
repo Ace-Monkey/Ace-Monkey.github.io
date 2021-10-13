@@ -140,6 +140,10 @@ aside .aside-header .avatar-icon img {
   width: 100px;
   height: 100px;
   border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 aside .aside-content {
