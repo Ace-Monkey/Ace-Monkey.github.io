@@ -6,7 +6,8 @@ function AsideSkills({ skills })
     <li key={ skill.id }>{ skill.skill }</li>
   );
     return (
-        <div className="skills-tags">
+      <div className="skills-tags">
+        <p>Skills:</p>
           <ul>
           { skillitems }
           </ul>

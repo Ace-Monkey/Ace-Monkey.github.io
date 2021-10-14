@@ -20,10 +20,18 @@ function Asidebar({ info }) {
 
   const social = info.social;
 
+  function toggleAsidebar() {
+    var element = document.getElementsByClassName("aside")[0];
+    if (element)
+    {
+      element.classList.toggle("slide");
+    }
+  }
+
   // Asidebar content -------------
   return (
-    <aside>
-      <button className="aside-button">i</button>
+    <aside className="aside">
+      <button className="aside-button" onClick={ toggleAsidebar }>I</button>
       <AsideHeader profileimg={profileimg} name={name} jobtitle={jobtitle} />
 
       <div className="aside-content">

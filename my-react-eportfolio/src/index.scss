@@ -81,6 +81,9 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  @media only screen and (max-width: $mobile) {
+    padding: 0px 15px;
+  }
 }
 
 .App {
@@ -124,10 +127,14 @@ aside {
   .aside-button {
     display: none;
     position: absolute;
-    right: -31px;
+    right: -30px;
     width: 30px;
     height: 30px;
-    opacity: .3;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $highlight;
+    border: 0px;
+    color: $base-dark-01;
     @media only screen and (max-width: $mobile) {
       display: block;
     }
@@ -155,6 +162,7 @@ aside {
     padding: 30px;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    height: calc((100% - 266px) - 48px);
     &::-webkit-scrollbar {
       display: none;
     }
@@ -184,6 +192,9 @@ aside {
       }
     }
     .skills-tags {
+      p {
+        color: #fff;
+      }
       ul {
         display: inline-block;
         width: 100%;
@@ -259,6 +270,7 @@ main {
   @media only screen and (max-width: $mobile) {
     width: 100%;
     float: none;
+    padding: 0px 15px 0px 15px;
   }
   .main-scrollbox {
     overflow-y: scroll;
@@ -340,6 +352,7 @@ main {
         .experience-item {
           padding: 5%;
           background-color: $base-dark-3;
+          box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
           h5 {
             margin-bottom: 0.1em;
           }
@@ -361,9 +374,16 @@ main {
       vertical-align: bottom;
       p {
         margin: 0px;
+        @media only screen and (max-width: $mobile) {
+          float: none !important;
+          text-align: center;
+        }
       }
       p:nth-of-type(1) {
         float: left;
+        @media only screen and (max-width: $mobile) {
+          margin-bottom: 10px;
+        }
       }
       p:nth-of-type(2) {
         float: right;
