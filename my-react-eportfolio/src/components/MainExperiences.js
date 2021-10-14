@@ -1,7 +1,7 @@
 function MainExperiences({ items, title }) {
   const rowsarray = items;
   const expitems = rowsarray.map((exp) => (
-    <div key={ exp.title } class="experience-item">
+    <div key={ exp.id } className="experience-item">
       <h5>{exp.title}</h5>
       <span>{exp.date}</span>
       <p>{exp.text}</p>
