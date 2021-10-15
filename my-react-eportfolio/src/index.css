@@ -40,6 +40,10 @@ a {
   color: #2C2C36;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
+  -webkit-box-shadow: 0 0 0 0 #ffc107;
+          box-shadow: 0 0 0 0 #ffc107;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .primary-btn:hover {
@@ -453,10 +457,14 @@ main .main-scrollbox .experience-grid .experience-grid-inner .experience-item {
   background-color: #2C2C36;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
           box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 main .main-scrollbox .experience-grid .experience-grid-inner .experience-item h5 {
   margin-bottom: 0.1em;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 main .main-scrollbox .experience-grid .experience-grid-inner .experience-item span {
@@ -464,6 +472,14 @@ main .main-scrollbox .experience-grid .experience-grid-inner .experience-item sp
   font-size: 14px;
   opacity: 0.8;
   margin-bottom: 1em;
+}
+
+main .main-scrollbox .experience-grid .experience-grid-inner .experience-item:hover {
+  background-color: #474750;
+}
+
+main .main-scrollbox .experience-grid .experience-grid-inner .experience-item:hover h5 {
+  color: #FFC107;
 }
 
 main .main-scrollbox .main-timelines {
@@ -508,11 +524,15 @@ main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .ti
   background-color: #2C2C36;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
           box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content h5 {
   float: left;
   max-width: 260px;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 @media only screen and (max-width: 500px) {
@@ -570,6 +590,14 @@ main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .ti
 
 main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section:last-of-type .time-line {
   height: calc(100% - 15px);
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section:hover .time-content {
+  background-color: #474750;
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section:hover .time-content h5 {
+  color: #FFC107;
 }
 
 main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section:hover .time-line .time-point {

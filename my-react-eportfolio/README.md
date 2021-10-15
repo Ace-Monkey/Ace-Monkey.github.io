@@ -1,6 +1,6 @@
 # My React E-portfolio
 
-This project was made to showcase the information stored on my personal CV in a more sleek and in depth way.
+This project was made to showcase the information stored on my personal CV in a more sleek and in depth way. The information is pulled from a jsonbin that i created; it's one big JSON object with all the data.
 Using my skills in React, I created components and put them together on a webpage, then deployed the finished version to my Github page. 
 
 ## Components
