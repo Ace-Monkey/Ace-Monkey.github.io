@@ -2,6 +2,7 @@ import MainHero from "./MainHero";
 import MainNumbers from "./MainNumbers";
 import MainExperiences from "./MainExperiences";
 import MainFooter from "./MainFooter";
+import MainTimelines from "./MainTimelines";
 
 function Main({ info }) {
   const heroimage = info.heroimage;
@@ -14,12 +15,15 @@ function Main({ info }) {
   const experiencestitle = info.experiencestitle
   const experiences = info.experiences;
 
+  const timeline1 = info.timeline1
+  const timeline2 = info.timeline2
+
   const footerleft = info.footerleft;
   const footerright = info.footerright;
 
   // Main content area -----------------------
   return (
-    <main>
+    <main className="main">
       <div className="main-scrollbox">
         <MainHero
           bgimg={heroimage}
@@ -28,7 +32,8 @@ function Main({ info }) {
           btntext={herobtntext}
         />
         <MainNumbers rows={numbersrow} />
-        <MainExperiences items={experiences} title={ experiencestitle } />
+        <MainExperiences items={experiences} title={experiencestitle} />
+        <MainTimelines tl1={timeline1} tl2={timeline2} />
         <MainFooter left={footerleft} right={footerright} />
       </div>
     </main>

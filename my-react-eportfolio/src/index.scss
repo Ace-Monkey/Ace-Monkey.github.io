@@ -10,6 +10,7 @@ $small-text: 14px;
 
 $tablet: 1140px;
 $mobile: 900px;
+$small-mobile: 500px;
 
 /* - General Styles - */
 
@@ -19,6 +20,7 @@ $mobile: 900px;
 
 p {
   margin-top: 0px;
+  line-height: 1.2;
 }
 
 h1 {
@@ -267,6 +269,10 @@ main {
   height: 100%;
   padding: 0px 30px 0px 30px;
   background-color: $base-dark-01;
+  transition: .3s all ease;
+  &.fade {
+    opacity: 0.4;
+  }
   @media only screen and (max-width: $mobile) {
     width: 100%;
     float: none;
@@ -328,11 +334,14 @@ main {
           font-size: $small-text;
           display: flex;
           align-items: center;
-          span {
+          & > span {
             color: $highlight;
             margin-right: 1em;
             font-size: 22px;
             font-weight: 600;
+            @media only screen and (max-width: $mobile) {
+              margin-right: 0.3em;
+            }
           }
         }
       }
@@ -366,6 +375,94 @@ main {
       }
     }
 
+    .main-timelines {
+      margin: 30px 0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      @media only screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+      }
+      .timeline {
+        .timeline-inner {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 40px;
+          .time-section {
+            padding-right: 60px;
+            position: relative;
+            @media only screen and (max-width: $small-mobile) {
+              padding-right: 40px;
+            }
+            .time-content {
+              padding: 5%;
+              display: inline-block;
+              width: 100%;
+              background-color: $base-dark-3;
+              box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+              h5 {
+                float: left;
+                max-width: 260px;
+                @media only screen and (max-width: $small-mobile) {
+                  float: none;
+                  max-width: 100%;
+                }
+              }
+              span {
+                float: right;
+                padding: 5px 10px;
+                border-radius: 10px;
+                background-color: $base-dark-0;
+                color: $highlight;
+                font-size: $small-text;
+                @media only screen and (max-width: $small-mobile) {
+                  display: inline-block;
+                  float: none;
+                }
+              }
+              p {
+                display: inline-block;
+                width: 100%;
+                margin-top: 1.5em;
+              }
+            }
+            .time-line {
+              width: 4px;
+              height: calc(100% + 45px);
+              background-color: $base-dark-0;
+              position: absolute;
+              right: 15px;
+              top: 15px;
+              .time-point {
+                position: absolute;
+                top: 0px;
+                left: -6px;
+                width: 15px;
+                height: 15px;
+                background-color: transparent;
+                border: 4px solid $highlight;
+                border-radius: 100px;
+                box-shadow: 0 0 0 0 rgba(255, 193, 7, 1);
+                transform: scale(1);
+              }
+            }
+            &:last-of-type {
+              .time-line {
+                height: calc(100% - 15px);
+              }
+            }
+            &:hover {
+              .time-line {
+                .time-point {
+                  animation: pulse 2s infinite;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     footer {
       padding: 15px 30px;
       display: inline-block;
@@ -390,4 +487,21 @@ main {
       }
     }
   }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+	}
 }

@@ -1,4 +1,3 @@
-//import profileimg from './images/profile-placeholder.png'
 import { useState, useEffect } from "react";
 //import data from "./data";
 

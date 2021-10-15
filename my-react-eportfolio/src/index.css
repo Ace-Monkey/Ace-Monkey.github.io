@@ -6,6 +6,7 @@
 
 p {
   margin-top: 0px;
+  line-height: 1.2;
 }
 
 h1 {
@@ -305,6 +306,12 @@ main {
   height: 100%;
   padding: 0px 30px 0px 30px;
   background-color: #1E1E28;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+main.fade {
+  opacity: 0.4;
 }
 
 @media only screen and (max-width: 900px) {
@@ -402,11 +409,17 @@ main .main-scrollbox .numbers-row ul li {
           align-items: center;
 }
 
-main .main-scrollbox .numbers-row ul li span {
+main .main-scrollbox .numbers-row ul li > span {
   color: #FFC107;
   margin-right: 1em;
   font-size: 22px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+  main .main-scrollbox .numbers-row ul li > span {
+    margin-right: 0.3em;
+  }
 }
 
 main .main-scrollbox .experience-grid {
@@ -453,6 +466,117 @@ main .main-scrollbox .experience-grid .experience-grid-inner .experience-item sp
   margin-bottom: 1em;
 }
 
+main .main-scrollbox .main-timelines {
+  margin: 30px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  main .main-scrollbox .main-timelines {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section {
+  padding-right: 60px;
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section {
+    padding-right: 40px;
+  }
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content {
+  padding: 5%;
+  display: inline-block;
+  width: 100%;
+  background-color: #2C2C36;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+          box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content h5 {
+  float: left;
+  max-width: 260px;
+}
+
+@media only screen and (max-width: 500px) {
+  main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content h5 {
+    float: none;
+    max-width: 100%;
+  }
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content span {
+  float: right;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #191923;
+  color: #FFC107;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+  main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content span {
+    display: inline-block;
+    float: none;
+  }
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-content p {
+  display: inline-block;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-line {
+  width: 4px;
+  height: calc(100% + 45px);
+  background-color: #191923;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section .time-line .time-point {
+  position: absolute;
+  top: 0px;
+  left: -6px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 4px solid #FFC107;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 0 0 #ffc107;
+          box-shadow: 0 0 0 0 #ffc107;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section:last-of-type .time-line {
+  height: calc(100% - 15px);
+}
+
+main .main-scrollbox .main-timelines .timeline .timeline-inner .time-section:hover .time-line .time-point {
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
 main .main-scrollbox footer {
   padding: 15px 30px;
   display: inline-block;
@@ -484,5 +608,47 @@ main .main-scrollbox footer p:nth-of-type(1) {
 
 main .main-scrollbox footer p:nth-of-type(2) {
   float: right;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+            box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+            box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
 }
 /*# sourceMappingURL=index.css.map */

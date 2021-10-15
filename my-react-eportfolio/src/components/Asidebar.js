@@ -22,9 +22,14 @@ function Asidebar({ info }) {
 
   function toggleAsidebar() {
     var element = document.getElementsByClassName("aside")[0];
+    var element2 = document.getElementsByClassName("main")[0];
     if (element)
     {
       element.classList.toggle("slide");
+    }
+    if (element2)
+    {
+      element2.classList.toggle("fade");
     }
   }
 
