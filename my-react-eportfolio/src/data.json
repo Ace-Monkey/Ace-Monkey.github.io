@@ -1,7 +1,7 @@
 {
   "avatar": "https://www.mona.uwi.edu/modlang/sites/default/files/modlang/male-avatar-placeholder.png",
   "name": "Luke Dixon",
-  "jobtitle": "Front-end Developer,<br/>Devops Admin",
+  "jobtitle": "Front-end Developer",
   "rowinfo": [
     {
       "id": "11fbf7",
@@ -56,18 +56,26 @@
   "knowledge": [
     {
       "id": "11abf7",
-      "skill": "GIT knowledge"
+      "skill": "GIT Knowledge"
     },
     {
       "id": "11bbf7",
       "skill": "Unit Testing"
+    },
+    {
+      "id": "21bbf8",
+      "skill": "UX Design"
+    },
+    {
+      "id": "31bbf9",
+      "skill": "Debugging"
     }
   ],
   "downloads": [
     {
       "id": "11cbf7",
-      "text": "Download cv",
-      "link": "www.cvtemplate.com",
+      "text": "View cv",
+      "link": "https://docs.google.com/document/d/e/2PACX-1vQT19IO7llJvWmVxcGBF_x1UsTWIDSG3iWTkOHZPyrNKP6NWbPPODWTk5p6lQoMdmNK-KViAKSRn7ce/pub",
       "icon": "fa-file-download"
     }
   ],
@@ -75,43 +83,44 @@
     {
       "id": "11faf7",
       "icon": "fa-linkedin-in",
-      "link": "#."
+      "link": "https://www.linkedin.com/in/luke-dixon-5b2396167/"
     },
     {
       "id": "11fbf7",
       "icon": "fa-github-alt",
-      "link": "#."
+      "link": "https://github.com/Ace-Monkey"
     },
     {
       "id": "11fcf7",
       "icon": "fa-gitlab",
-      "link": "#."
+      "link": "https://gitlab.com/Ace-Monkey/"
     }
   ],
-  "heroimage": "https://images.unsplash.com/photo-1572587356426-b33bf42f999b",
+  "heroimage": "https://images.unsplash.com/photo-1572587356426-b33bf42f999b?w=1000&q=80",
   "herotitle": "Welcome to my E-portfolio!",
-  "herotext": "I build websites",
+  "herotext": "I develop websites and web apps.",
   "herobtntext": "Explore Now",
   "numbersrow": [
     {
       "id": "11fba7",
       "label": "Years Experience",
-      "value": "4+"
+      "value": 4,
+      "prefix": "",
+      "postfix": "+"
     },
     {
       "id": "11fbb7",
       "label": "Websites Developed",
-      "value": "27"
+      "value": 30,
+      "prefix": "",
+      "postfix": "+"
     },
     {
       "id": "11fbc7",
-      "label": "Pack Doughnuts",
-      "value": "£1"
-    },
-    {
-      "id": "11fbd7",
-      "label": "Hrs On BDO",
-      "value": "4000+"
+      "label": "Personal Projects",
+      "value": 6,
+      "prefix": "",
+      "postfix": "+"
     }
   ],
   "experiencestitle": "My Experiences",
@@ -119,34 +128,50 @@
     {
       "id": "11fbf1",
       "title": "Web Development",
-      "date": "August 2015 - September 2018",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+      "date": "Full Stack",
+      "text": "Built multiple websites using content management systems like WordPress and Joomla as well as a bespoke system using VB.NET. Experienced in both the front end and back end side of the systems, with knowledge on SQL databases and the WordPress PHP backend framework.<br /><br /><a href='https://www.modulestudio.co.uk/' target='_blank'>Module Studio</a>"
     },
     {
       "id": "11fbf2",
-      "title": "Web Development",
-      "date": "August 2015 - September 2018",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
-    },
-    {
-      "id": "11fbf3",
-      "title": "Web Development",
-      "date": "August 2015 - September 2018",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+      "title": "Web-Based Game",
+      "date": "Front-end",
+      "text": "Worked in a team to design and develop a web-based game for the Nuclear department to educate young children on the treatment that they will go through.<br /><br /><a href=\"https://spectacularscan.github.io/\" target=\"_blank\">Spectacular Scan Game</a>"
     },
     {
       "id": "11fbf4",
-      "title": "Web Development",
-      "date": "August 2015 - September 2018",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
-    },
-    {
-      "id": "11fbf5",
-      "title": "Web Development",
-      "date": "August 2015 - September 2018",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus."
+      "title": "React Development",
+      "date": "Full Stack",
+      "text": "I have developed small time web apps using React and Flask as a hobby and for experience. I have also done multiple code collaboration with friends; where we created React apps that took inspirations from real world apps on the web such as Instagram and Trello. Links can be found through my <a href='https://gitlab.com/Ace-Monkey/' target='_blank'>GitLab</a>."
     }
   ],
+  "timeline1": {
+    "title": "Education",
+    "sections": [
+      {
+        "id": "abcd12",
+        "title": "BSc (Hons) Computer Science",
+        "dates": "Sept 2015 - 2018",
+        "text": "Studied Computer Science at King's College London for 3 years where I achieved an Upper Second Class Honours"
+      },
+      {
+        "id": "bbcd12",
+        "title": " IT (level 3) Software Development",
+        "dates": "Sept 2013 - 2015",
+        "text": "Studied on a Software Development course in City and Islington College for 3 years and achieved 3 distinction stars (D* D* D*)."
+      }
+    ]
+  },
+  "timeline2": {
+    "title": "Work History",
+    "sections": [
+      {
+        "id": "dacd12",
+        "title": "Full Stack Web Developer - Module Media",
+        "dates": "Aug 2018 - Present",
+        "text": "Working in a small team to develop websites for different companies as well as branding design to give a face to new and growing organisations. Developed fully live websites usings the CMS Wordpress as well as a bespoke system using .Net and some static HTML sites."
+      }
+    ]
+  },
   "footerleft": "© 2021 My Eportfolio",
   "footerright": "Created by Luke Dixon"
 }

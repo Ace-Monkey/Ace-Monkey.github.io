@@ -1,15 +1,13 @@
 
-function AsideHeader({ profileimg }) {
+function AsideHeader({ profileimg, name, jobtitle }) {
     return (
         <div className="aside-header">
         <div className="avatar-icon">
           <img src={profileimg} alt="avatar" />
         </div>
         <div className="aside-text">
-          <h5>Luke Dixon</h5>
-          <p>Front-end Developer,<br/>
-            Devops Admin
-          </p>
+          <h5>{name}</h5>
+          <p dangerouslySetInnerHTML={{ __html: jobtitle }} />
         </div>
       </div>
     )

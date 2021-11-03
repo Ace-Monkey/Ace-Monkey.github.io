@@ -1,9 +1,9 @@
 $base-dark-0: #191923;
-$base-dark-01:#1E1E28;
+$base-dark-01: #1e1e28;
 $base-dark-1: #20202a;
 $base-dark-2: #252532;
-$base-dark-3: #2C2C36;
-$highlight: #FFC107;
+$base-dark-3: #2c2c36;
+$highlight: #ffc107;
 $dark-highlight: #474750;
 $grey-text: #8c8c8e;
 
@@ -53,7 +53,7 @@ a {
   padding: 15px 30px;
   background-color: $highlight;
   color: $base-dark-3;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 
   box-shadow: 0 0 0 0 rgba(255, 193, 7, 1);
   transform: scale(1);
@@ -62,7 +62,6 @@ a {
     background-color: $base-dark-3;
     color: $highlight;
   }
-
 }
 
 ul {
@@ -122,7 +121,7 @@ aside {
   background-color: $base-dark-1;
   float: left;
   position: relative;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   @media only screen and (max-width: $mobile) {
     position: fixed;
     z-index: 10;
@@ -215,7 +214,7 @@ aside {
           color: $highlight;
           margin-right: 10px;
           margin-bottom: 10px;
-          transition: .3s all ease;
+          transition: 0.3s all ease;
           &:hover {
             color: $base-dark-3;
             background-color: $highlight;
@@ -244,7 +243,7 @@ aside {
         letter-spacing: 1px;
         color: $grey-text;
         font-size: $small-text;
-        transition: .3s all ease;
+        transition: 0.3s all ease;
         &:hover {
           color: #fff;
         }
@@ -260,7 +259,7 @@ aside {
     bottom: 0px;
     width: 100%;
     a {
-      transition: .3s all ease;
+      transition: 0.3s all ease;
       &:hover {
         color: #fff;
       }
@@ -274,9 +273,11 @@ main {
   height: 100%;
   padding: 0px 30px 0px 30px;
   background-color: $base-dark-01;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   &.fade {
-    opacity: 0.4;
+    @media only screen and (max-width: $mobile) {
+      opacity: 0.4;
+    }
   }
   @media only screen and (max-width: $mobile) {
     width: 100%;
@@ -305,13 +306,13 @@ main {
         height: auto;
       }
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0px;
         left: 0px;
         width: 100%;
         height: 100%;
-        background-color: rgba(44,44,54,0.7);
+        background-color: rgba(44, 44, 54, 0.7);
       }
       .hero-content {
         position: relative;
@@ -367,10 +368,10 @@ main {
           padding: 5%;
           background-color: $base-dark-3;
           box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-          transition: .3s all ease;
+          transition: 0.3s all ease;
           h5 {
             margin-bottom: 0.1em;
-            transition: .3s all ease;
+            transition: 0.3s all ease;
           }
           span {
             display: block;
@@ -378,8 +379,13 @@ main {
             opacity: 0.8;
             margin-bottom: 1em;
           }
+          p {
+            a {
+              color: $highlight;
+            }
+          }
           &:hover {
-            background-color: $dark-highlight;
+            //background-color: $dark-highlight;
             h5 {
               color: $highlight;
             }
@@ -413,11 +419,12 @@ main {
               width: 100%;
               background-color: $base-dark-3;
               box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-              transition: .3s all ease;
+              transition: 0.3s all ease;
+              position: relative;
               h5 {
                 float: left;
                 max-width: 260px;
-                transition: .3s all ease;
+                transition: 0.3s all ease;
                 @media only screen and (max-width: $small-mobile) {
                   float: none;
                   max-width: 100%;
@@ -439,6 +446,19 @@ main {
                 display: inline-block;
                 width: 100%;
                 margin-top: 1.5em;
+              }
+              &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                border: 15px solid transparent;
+                border-top: 0;
+                border-bottom: 20px solid $base-dark-3;
+                position: absolute;
+                transform: rotate(90deg);
+                right: -24px;
+                top: 15px;
+                transition: 0.3s all ease;
               }
             }
             .time-line {
@@ -468,7 +488,7 @@ main {
             }
             &:hover {
               .time-content {
-                background-color: $dark-highlight;
+                //background-color: $dark-highlight;
                 h5 {
                   color: $highlight;
                 }
@@ -510,19 +530,68 @@ main {
   }
 }
 
+.backend {
+  .backend-inner {
+    form {
+      max-width: 800px;
+      width: 100%;
+      label {
+        margin: 20px 0px;
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+      }
+      div.avatar-section {
+        text-align: center;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        input {
+          width: 100%;
+        }
+      }
+    }
+    div.name-jobtitle-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      label {
+        input {
+          width: 100%;
+        }
+      }
+    }
+    div.other-infos {
+      max-width: 500px;
+      .other-info-row,
+      .row {
+        display: grid;
+        grid-template-columns: 50px 1fr 1fr;
+        grid-gap: 20px;
+        margin: 5px 0px;
+        p {
+          margin: 0px;
+          padding: 5px 0px;
+        }
+      }
+    }
+  }
+}
+
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
-	}
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
-	}
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
 }

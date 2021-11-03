@@ -22,8 +22,22 @@ function Main({ info }) {
   const footerright = info.footerright;
 
   // Main content area -----------------------
+
+  function toggleAsidebar() {
+    var element = document.getElementsByClassName("slide")[0];
+    var element2 = document.getElementsByClassName("fade")[0];
+    if (element)
+    {
+      element.classList.toggle("slide");
+    }
+    if (element2)
+    {
+      element2.classList.toggle("fade");
+    }
+  }
+
   return (
-    <main className="main">
+    <main className="main" onClick={ toggleAsidebar }>
       <div className="main-scrollbox">
         <MainHero
           bgimg={heroimage}
