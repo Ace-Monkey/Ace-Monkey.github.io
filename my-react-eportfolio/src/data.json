@@ -1,5 +1,5 @@
 {
-  "avatar": "https://www.mona.uwi.edu/modlang/sites/default/files/modlang/male-avatar-placeholder.png",
+  "avatar": "https://media-exp1.licdn.com/dms/image/C4E03AQGhqqMwM55Ctg/profile-displayphoto-shrink_800_800/0/1637787548160?e=1643241600&v=beta&t=9n3iYwf_iq_0loOqj7ftRhmmcIEzaJkInJ-8x-gEcUw",
   "name": "Luke Dixon",
   "jobtitle": "Front-end Developer",
   "rowinfo": [
@@ -47,6 +47,10 @@
     {
       "id": "18fbf7",
       "skill": "React"
+    },
+    {
+      "id": "19fcf8",
+      "skill": "VB.NET"
     },
     {
       "id": "19fbf7",
