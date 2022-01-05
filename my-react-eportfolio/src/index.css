@@ -653,6 +653,22 @@ main .main-scrollbox footer p:nth-of-type(2) {
   float: right;
 }
 
+.backend {
+  height: 100%;
+}
+
+.backend .backend-inner {
+  overflow-y: scroll;
+  height: 100%;
+  padding-top: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.backend .backend-inner::-webkit-scrollbar {
+  display: none;
+}
+
 .backend .backend-inner form {
   max-width: 800px;
   width: 100%;

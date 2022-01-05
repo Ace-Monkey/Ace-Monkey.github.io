@@ -531,7 +531,16 @@ main {
 }
 
 .backend {
+  height: 100%;
   .backend-inner {
+    overflow-y: scroll;
+    height: 100%;
+    padding-top: 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     form {
       max-width: 800px;
       width: 100%;
