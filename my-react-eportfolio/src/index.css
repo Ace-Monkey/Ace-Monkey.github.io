@@ -670,7 +670,6 @@ main .main-scrollbox footer p:nth-of-type(2) {
 }
 
 .backend .backend-inner form {
-  max-width: 800px;
   width: 100%;
 }
 
@@ -681,49 +680,64 @@ main .main-scrollbox footer p:nth-of-type(2) {
   text-align: left;
 }
 
-.backend .backend-inner form div.avatar-section {
-  text-align: center;
-}
-
-.backend .backend-inner form div.avatar-section img {
-  display: block;
-  margin: 0 auto;
-}
-
-.backend .backend-inner form div.avatar-section input {
+.backend .backend-inner form input {
   width: 100%;
 }
 
-.backend .backend-inner div.name-jobtitle-section {
+.backend .backend-inner form .row.multiple > label {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.backend .backend-inner form .row.multiple .object {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 40px;
   grid-gap: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
-.backend .backend-inner div.name-jobtitle-section label input {
-  width: 100%;
+.backend .backend-inner form .row.multiple.rowinfo .object {
+  -ms-grid-columns: 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 40px;
 }
 
-.backend .backend-inner div.other-infos {
-  max-width: 500px;
+.backend .backend-inner form .row.multiple.skills .object {
+  -ms-grid-columns: 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 40px;
 }
 
-.backend .backend-inner div.other-infos .other-info-row,
-.backend .backend-inner div.other-infos .row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50px 1fr 1fr;
-      grid-template-columns: 50px 1fr 1fr;
-  grid-gap: 20px;
-  margin: 5px 0px;
+.backend .backend-inner form .row.multiple.knowledge .object {
+  -ms-grid-columns: 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 40px;
 }
 
-.backend .backend-inner div.other-infos .other-info-row p,
-.backend .backend-inner div.other-infos .row p {
-  margin: 0px;
-  padding: 5px 0px;
+.backend .backend-inner form .row.multiple.downloads .object {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+}
+
+.backend .backend-inner form .row.multiple.social .object {
+  -ms-grid-columns: 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 40px;
+}
+
+.backend .backend-inner form .row.multiple.numbersrow .object {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 40px;
+}
+
+.backend .backend-inner form .row.multiple.experiences .object {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+}
+
+.backend .backend-inner form .row.multiple.sections .object {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 40px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 40px;
 }
 
 @-webkit-keyframes pulse {

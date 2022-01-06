@@ -542,7 +542,6 @@ main {
       display: none;
     }
     form {
-      max-width: 800px;
       width: 100%;
       label {
         margin: 20px 0px;
@@ -550,38 +549,44 @@ main {
         display: inline-block;
         text-align: left;
       }
-      div.avatar-section {
-        text-align: center;
-        img {
-          display: block;
-          margin: 0 auto;
-        }
-        input {
-          width: 100%;
-        }
+      input {
+        width: 100%;
       }
-    }
-    div.name-jobtitle-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
-      label {
-        input {
-          width: 100%;
+      .row.multiple {
+        & > label {
+         // grid-column: 1/-1;
+          margin-bottom: 0;
+          margin-top: 40px;
         }
-      }
-    }
-    div.other-infos {
-      max-width: 500px;
-      .other-info-row,
-      .row {
-        display: grid;
-        grid-template-columns: 50px 1fr 1fr;
-        grid-gap: 20px;
-        margin: 5px 0px;
-        p {
-          margin: 0px;
-          padding: 5px 0px;
+        .object {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 40px;
+          grid-gap: 20px;
+          align-items: end;
+        }
+        &.rowinfo .object {
+          grid-template-columns: 1fr 1fr 1fr 40px;
+        }
+        &.skills .object {
+          grid-template-columns: 1fr 1fr 40px;
+        }
+        &.knowledge .object {
+          grid-template-columns: 1fr 1fr 40px;
+        }
+        &.downloads .object {
+          grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+        }
+        &.social .object {
+          grid-template-columns: 1fr 1fr 1fr 40px;
+        }
+        &.numbersrow .object {
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 40px;
+        }
+        &.experiences .object {
+          grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+        }
+        &.sections .object {
+          grid-template-columns: 1fr 1fr 1fr 1fr 40px;
         }
       }
     }
